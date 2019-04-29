@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Student } from '../student';
 import { StudentService } from '../student.service';
-import { StudentDetailComponent } from '../student-details/student-details.component';
+import { StudentDetailsComponent } from '../student-details/student-details.component';
 
 @Component({
   selector: 'student-list',
