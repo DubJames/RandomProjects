@@ -14,19 +14,19 @@ export class StudentDetailsComponent{
   @Input()
   createStudent(student: Student) {
     this.studentService.createStudent(student).then((newStudent: Student) => {
-      this.createHandler(newStudent);
+      this.createStudent(newStudent);
     });
   }
   @Input()
   updateStudent(student: Student): void {
     this.studentService.updateStudent(student).then((updatedStudent: Student) => {
-      this.updateHandler(updatedStudent);
+      this.updateStudent(updatedStudent);
     });
   }
   @Input()
   deleteStudent(studentId: String): void {
     this.studentService.deleteStudent(studentId).then((deletedStudentId: String) => {
-      this.deleteHandler(deletedStudentId);
+      this.deleteStudent(deletedStudentId);
     });
   }
   constructor(private studentService: StudentService) { }
